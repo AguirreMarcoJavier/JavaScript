@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 3 y 4</title>
 </head>
 <body>
-    <h1>Ejercicio 1 - JavaScript</h1>
-    <h3> Me basé en el último ejemplo "Pedir un número por Prompt, repetir la salida del mensaje "Hola" la cantidad de veces ingresada"</h3>
-    <h4>var numero = prompt("Ingrese un numero por favor: ");
-        <br>
-        alert ('Muy bien, se Mostrará hola ' + numero + " de veces en la consola")
-        <br>
-        for (let i = 0; i < numero; i++) {
-        <br>
-          console.log ('Hola');
-        <br>
-        }
+    <h1>Ejercicio 3 - JavaScript</h1>
+    <h3> Pedimos un número para que arranque el cálculo </h3>
+    <h4>let variable = prompt('Ingrese el precio del juego') /* Ingresamos una variable que se usará más adelante para calcular todo*/
+    <br>
+    <img src="https://cdn-icons-png.flaticon.com/512/66/66783.png" alt="">
+    <br>
+    const impuestos = [1, 0.35, 0.21, 0.08] /* Utilizamos el Array para hacer una lista de los impuestos aplicables y el 1 para que juntos hagan 1.64 (Y de paso facilitarme la multiplicación más adelante) */
+    <br>
+    <img src="https://cdn-icons-png.flaticon.com/512/66/66783.png" alt="">
+    <br>
+    let impTotales = impuestos[0] + impuestos[1] + impuestos[2] + impuestos[3] /* Sumamos el Array para luego usarlo en la variable y calcular el precio del juego */
+    <br>
+    <img src="https://cdn-icons-png.flaticon.com/512/66/66783.png" alt="">
+    <br>
+    let tap = parseFloat(impTotales) * parseFloat(variable); /* Los convertimos en flotantes para que no me concatene los valores */
+    <br>
+    <img src="https://cdn-icons-png.flaticon.com/512/66/66783.png" alt="">
+    <br>
+        console.log(('Tendrías que pagar aproximadamente ') + tap.toFixed() + ' ARS'); /* Agregamos .toFixed para arreglar la buena cantidad de decimales extras que metía la multiplicación */
+    <br>
+    <img src="https://cdn-icons-png.flaticon.com/512/66/66783.png" alt="">
+    <br>
+        Nos mostrará el resultado final
         </h4>
 	<script src="./JS/mi_archivo_js.js">
 	</script>
